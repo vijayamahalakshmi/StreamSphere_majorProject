@@ -1,0 +1,139 @@
+/* --------- for hiding ---------- */
+
+.homeSideNavbarHide {
+  display: none;
+}
+
+/* SIDEBAR CONTAINER */
+.home-sideNavbar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.16 1;
+  box-sizing: border-box;
+  height: 92vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 55px;
+  left: 0px;
+  width: 275px;
+  padding: 14px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-sideNavbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* TOP SECTION */
+.home_sideNavbarTop {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--accent-hover);
+  padding-bottom: 10px;
+}
+
+.home_sideNavbarTopOption {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 9px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.home_sideNavbarTopOption:hover {
+  background-color: var(--accent-hover);
+}
+
+.home_sideNavbarTopOption_active {
+  background-color: var(--accent-bg);
+}
+
+.home_sideNavbarTopOptionTitle {
+  font-size: 14px;
+  font-weight: 450;
+}
+
+/* MIDDLE SECTION */
+.home_sideNavbarMiddle {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--accent-hover);
+  padding: 10px 0;
+}
+
+.home_sideNavbarTopOptionTitleHeader {
+  font-weight: 600;
+}
+
+/* IMAGE LOGO */
+.home_sideNavbar_ImgLogo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+/* MAIN CONTENT AREA */
+.homeMainSide {
+  flex: 0.84;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* SUBSCRIPTION MODAL */
+.modal-subscriber {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.subscriber-card {
+  width: 50%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin-top: 150px;
+  height: 460px;
+  z-index: 10000;
+  padding: 30px 60px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.subscriptionsBox {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.personSubsc {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.channelInfo-subs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.channel-info-profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
